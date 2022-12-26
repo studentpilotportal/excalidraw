@@ -75,12 +75,12 @@
   --space-factor: 0.25rem;
   --text-primary-color: var(--color-gray-80);
 
-  --color-selection: #6965db;
+  --color-selection: #3366cc;
 
-  --color-primary: #6965db;
-  --color-primary-darker: #5b57d1;
-  --color-primary-darkest: #4a47b1;
-  --color-primary-light: #e3e2fe;
+  --color-primary: #3366cc;
+  --color-primary-darker: #23478e;
+  --color-primary-darkest: #23478e;
+  --color-primary-light: #D0DFFD;
 
   --color-gray-10: #f5f5f5;
   --color-gray-20: #ebebeb;
@@ -94,7 +94,7 @@
   --color-gray-90: #1e1e1e;
   --color-gray-100: #121212;
 
-  --color-danger: #db6965;
+  --color-danger: #F44336;
   --color-promo: #e70078;
 
   --border-radius-md: 0.375rem;
@@ -157,12 +157,12 @@
     // will be inverted to a lighter color.
     --color-selection: #3530c4;
 
-    --color-primary: #a8a5ff;
-    --color-primary-darker: #b2aeff;
-    --color-primary-darkest: #beb9ff;
+    --color-primary: #cae5ff;
+    --color-primary-darker: #bedfff;
+    --color-primary-darkest: #bedfff;
     --color-primary-light: #4f4d6f;
 
-    --color-danger: #ffa8a5;
-    --color-promo: #d297ff;
+    --color-danger: #ef9a9a;
+    --color-promo: #f863a7;
   }
 }

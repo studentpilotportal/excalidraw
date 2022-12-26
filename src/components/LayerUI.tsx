@@ -51,7 +51,7 @@ import {
   WelcomeScreenMenuArrow,
   WelcomeScreenTopToolbarArrow,
 } from "./icons";
-import { MenuLinks, Separator } from "./MenuUtils";
+import { Separator } from "./MenuUtils";
 import { useOutsideClickHook } from "../hooks/useOutsideClick";
 import WelcomeScreen from "./WelcomeScreen";
 import { hostSidebarCountersAtom } from "./Sidebar/Sidebar";
@@ -103,7 +103,6 @@ const LayerUI = ({
   showExitZenModeBtn,
   isCollaborating,
   renderTopRightUI,
-
   renderCustomStats,
   renderCustomSidebar,
   libraryReturnUrl,
@@ -200,7 +199,8 @@ const LayerUI = ({
         </div>
       </WelcomeScreenDecor>
 
-      <button
+      {/*//@ts-ignore*/}
+      {appState.menusEnabled && (<button
         data-prevent-outside-click
         className={clsx("menu-button", "zen-mode-transition", {
           "transition-left": appState.zenModeEnabled,
@@ -210,7 +210,7 @@ const LayerUI = ({
         data-testid="menu-button"
       >
         {HamburgerMenuIcon}
-      </button>
+      </button>)}
 
       {isMenuOpen && (
         <div
@@ -251,8 +251,6 @@ const LayerUI = ({
               {actionManager.renderAction("toggleShortcuts", undefined, true)}
               {!appState.viewModeEnabled &&
                 actionManager.renderAction("clearCanvas")}
-              <Separator />
-              <MenuLinks />
               <Separator />
               <div
                 style={{

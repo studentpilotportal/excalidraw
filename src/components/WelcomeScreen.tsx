@@ -92,7 +92,8 @@ const WelcomeScreen = ({
   return (
     <div className="WelcomeScreen-container">
       <div className="WelcomeScreen-logo virgil WelcomeScreen-decor">
-        {ExcalLogo} Excalidraw
+        {/*{ExcalLogo} Excalidraw*/}
+        Whiteboards
       </div>
       <div className="virgil WelcomeScreen-decor WelcomeScreen-decor--subheading">
         {subheadingJSX}
@@ -109,26 +110,26 @@ const WelcomeScreen = ({
             icon={LoadIcon}
           />
         )}
-        <WelcomeScreenItem
-          label={t("labels.liveCollaboration")}
-          shortcut={null}
-          onClick={() => setCollabDialogShown(true)}
-          icon={UsersIcon}
-        />
+        {/*<WelcomeScreenItem*/}
+        {/*  label={t("labels.liveCollaboration")}*/}
+        {/*  shortcut={null}*/}
+        {/*  onClick={() => setCollabDialogShown(true)}*/}
+        {/*  icon={UsersIcon}*/}
+        {/*/>*/}
         <WelcomeScreenItem
           onClick={() => actionManager.executeAction(actionShortcuts)}
           label={t("helpDialog.title")}
           shortcut="?"
           icon={HelpIcon}
         />
-        {!isExcalidrawPlusSignedUser && (
-          <WelcomeScreenItem
-            link="https://plus.excalidraw.com/plus?utm_source=excalidraw&utm_medium=app&utm_content=welcomeScreenGuest"
-            label="Try Excalidraw Plus!"
-            shortcut={null}
-            icon={PlusPromoIcon}
-          />
-        )}
+        {/*{!isExcalidrawPlusSignedUser && (*/}
+        {/*  <WelcomeScreenItem*/}
+        {/*    link="https://plus.excalidraw.com/plus?utm_source=excalidraw&utm_medium=app&utm_content=welcomeScreenGuest"*/}
+        {/*    label="Try Excalidraw Plus!"*/}
+        {/*    shortcut={null}*/}
+        {/*    icon={PlusPromoIcon}*/}
+        {/*  />*/}
+        {/*)}*/}
       </div>
     </div>
   );

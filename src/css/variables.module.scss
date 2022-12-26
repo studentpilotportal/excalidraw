@@ -11,7 +11,7 @@
     .ToolIcon_type_radio,
     .ToolIcon_type_checkbox {
       &:checked + .ToolIcon__icon {
-        --icon-fill-color: var(--color-primary-darker);
+        --icon-fill-color: var(--color-primary);
 
         svg {
           fill: var(--icon-fill-color);

@@ -105,6 +105,7 @@ const renderTopRightUI = () => {
 
 export default function App() {
   const appRef = useRef<any>(null);
+  const [menusEnabled, setMenusEnabled] = useState(true);
   const [viewModeEnabled, setViewModeEnabled] = useState(false);
   const [zenModeEnabled, setZenModeEnabled] = useState(false);
   const [gridModeEnabled, setGridModeEnabled] = useState(false);
@@ -539,6 +540,14 @@ export default function App() {
           <label>
             <input
               type="checkbox"
+              checked={menusEnabled}
+              onChange={() => setMenusEnabled(!menusEnabled)}
+            />
+            Menus enabled
+          </label>
+          <label>
+            <input
+              type="checkbox"
               checked={viewModeEnabled}
               onChange={() => setViewModeEnabled(!viewModeEnabled)}
             />
@@ -663,6 +672,7 @@ export default function App() {
             onCollabButtonClick={() =>
               window.alert("You clicked on collab button")
             }
+            menusEnabled={menusEnabled}
             viewModeEnabled={viewModeEnabled}
             zenModeEnabled={zenModeEnabled}
             gridModeEnabled={gridModeEnabled}

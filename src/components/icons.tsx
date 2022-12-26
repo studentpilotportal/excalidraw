@@ -4,7 +4,7 @@
 //
 
 // Note: when adding new icons, review https://developer.mozilla.org/en-US/docs/Mozilla/Developer_guide/RTL_Guidelines
-// to determine whether or not the icons should be mirrored in right-to-left languages.
+// to determine whether the icons should be mirrored in right-to-left languages.
 
 import React from "react";
 

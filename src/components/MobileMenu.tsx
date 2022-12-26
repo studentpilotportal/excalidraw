@@ -19,7 +19,7 @@ import { LibraryButton } from "./LibraryButton";
 import { PenModeButton } from "./PenModeButton";
 import { Stats } from "./Stats";
 import { actionToggleStats } from "../actions";
-import { MenuLinks, Separator } from "./MenuUtils";
+import { Separator } from "./MenuUtils";
 import WelcomeScreen from "./WelcomeScreen";
 import MenuItem from "./MenuItem";
 import { ExportImageIcon } from "./icons";
@@ -203,8 +203,6 @@ export const MobileMenu = ({
         )}
         {actionManager.renderAction("toggleShortcuts", undefined, true)}
         {!appState.viewModeEnabled && actionManager.renderAction("clearCanvas")}
-        <Separator />
-        <MenuLinks />
         <Separator />
         {!appState.viewModeEnabled && (
           <div style={{ marginBottom: ".5rem" }}>
